@@ -1,0 +1,27 @@
+section.container {
+  width: 100%;
+  margin-bottom: 4em; }
+  section.container .intro-row {
+    display: flex; }
+    @media screen and (max-width: 768px) {
+      section.container .intro-row {
+        flex-direction: column; } }
+    section.container .intro-row header {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      height: 300px; }
+    section.container .intro-row section {
+      height: 300px;
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+  @media screen and (max-width: 768px) {
+    section.container .intro-row.rwd-reverse {
+      flex-direction: column-reverse; } }
+
+/*# sourceMappingURL=index.css.map */

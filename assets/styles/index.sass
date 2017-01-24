@@ -1,0 +1,27 @@
+section.container
+    .intro-row
+        display: flex
+        @media screen and (max-width: 768px)
+            flex-direction: column
+        header
+            flex: 1
+            display: flex
+            justify-content: space-around
+            align-items: center
+            background-color: #333
+            color: white
+            height: 300px
+        section
+            height: 300px
+            flex: 1
+            display: flex
+            justify-content: space-around
+            align-items: center
+    .intro-row.rwd-reverse
+        flex-direction: row-reverse
+        @media screen and (max-width: 768px)
+            flex-direction: column
+
+h1.title-bar
+    margin: 24px auto
+    text-align: center

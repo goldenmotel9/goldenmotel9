@@ -1,0 +1,26 @@
+section.container {
+  margin: 3em auto;
+  width: 100vw;
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box; }
+  section.container div.table.wrapper {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center; }
+    section.container div.table.wrapper table {
+      width: 700px;
+      text-align: center;
+      background-color: white;
+      border-spacing: 1px; }
+      @media screen and (max-width: 768px) {
+        section.container div.table.wrapper table {
+          width: 350px; } }
+    section.container div.table.wrapper thead th {
+      background-color: #333;
+      color: white;
+      padding: .5em 0; }
+    section.container div.table.wrapper tbody td {
+      padding: .5em 0;
+      background-color: #eee; }

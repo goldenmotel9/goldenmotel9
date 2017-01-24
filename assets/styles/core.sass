@@ -1,0 +1,123 @@
+*
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+
+html,body
+    display: flex
+    min-height: 100vh
+    height: 100vh
+    width: 100vw
+    min-width: 768px
+    flex-direction: column
+
+section.cover
+    width: 100vw
+    overflow: hidden
+    margin: 0 auto
+    text-align: center
+
+section.container
+    width: 100%
+    margin: 0 auto
+    padding-bottom: 20px
+    @media screen and (min-width: 780px)
+        width: 780px
+
+.body
+    flex: 1 0 auto
+    display: flex
+    line-height: 1.6em
+    navbar
+        height: 50px
+        position: fixed
+        display: flex
+        width: 100vw
+        background-color: gray
+        z-index: 999
+        ul
+            width: 100%
+            height: 100%
+            margin: 0 auto
+            padding: 0
+            display: flex
+            flex-wrap: wrap
+            text-align: center
+            background: inherit
+            z-index: 999
+            li
+                min-height: 50px
+                background: inherit
+                flex: 1
+                list-style-type: none
+                height: 100%
+                display: flex
+                align-items: center
+                justify-content: space-around
+                z-index: 999
+                a
+                    color: white
+                    text-decoration: none
+                    &.active, &:hover
+                        text-decoration: underline
+                    z-index: 999
+        ul li:first-child
+            display: none
+        ul li:last-child
+            margin-right: 12px
+            display: none
+            font-size: 1.5em
+        @media screen and (max-width:768px)
+            ul
+                display: table
+                position: relative
+                li:not(:first-child)
+                    display: none
+                li:first-child
+                    display: flex
+                    max-width: 100px
+                    align-self: flex-start
+                li:last-child
+                    display: flex
+                    height: 50px
+                    max-width: 100px
+                    position: absolute
+                    right: 0
+                    top: 0
+                &.responsive
+                    li:not(:first-child):not(:last-child)
+                        min-width: 100vw
+                        display: flex
+
+    main
+        display: block
+        width: 100%
+        section.cover
+            margin-top: 3em
+            height: 400px
+            width: 100%
+            background-color: #eee
+        div>img
+            height: 400px
+            margin: 0 auto
+
+.footer
+    background-color: #eee
+    padding: 1em
+    height: auto
+    width: 100vw
+    display: table
+    div
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        line-height: 1.6em
+
+
+.explain
+    color: gray
+    font-style: italic
+
+.vis-hidden
+    visibility: hidden

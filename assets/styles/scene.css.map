@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU,CACN,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,MAAM,CACd,OAAO,CAAE,KAAK,CAGd,6BAAgB,CACZ,UAAU,CAAE,GAAG",
+"sources": ["scene.sass"],
+"names": [],
+"file": "scene.css"
+}
